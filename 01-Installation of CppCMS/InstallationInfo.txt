@@ -1,0 +1,633 @@
+
+
+
+root@shark:/home/shark/Downloads# git clone git clone https://github.com/artyom-beilis/cppcms.git cppcms 
+
+root@shark:/home/shark/Downloads# ls
+cppcms              cppcms-2.0.0.beta2.tar.bz2  FileZilla3                                 tor-browser_en-US
+cppcms-2.0.0.beta2  filezilla                   FileZilla_3.53.1_x86_64-linux-gnu.tar.bz2  tor-browser-linux64-10.0.15_en-US.tar.xz
+root@shark:/home/shark/Downloads# cd cppcms
+root@shark:/home/shark/Downloads/cppcms# ls
+bin      CMakeLists.txt  contrib      cppcms  Doxyfile  header_file_template.h  private    src    THIRD_PARTY_SOFTWARE.TXT
+booster  config.cmake.h  COPYING.TXT  doc     examples  MIT.TXT                 README.md  tests  tools
+root@shark:/home/shark/Downloads/cppcms# mkdir build
+root@shark:/home/shark/Downloads/cppcms# cd build
+root@shark:/home/shark/Downloads/cppcms/build# cmake ..
+-- The C compiler identification is GNU 8.3.0
+-- The CXX compiler identification is GNU 8.3.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Looking for newlocale
+-- Looking for newlocale - found
+-- Looking for ICU libraries
+-- ICU Found, building booster locale
+-- Performing Test LIBC_ICONV
+-- Performing Test LIBC_ICONV - Success
+-- Performing Test GCC_IS_GCC4
+-- Performing Test GCC_IS_GCC4 - Success
+-- Looking for dlopen
+-- Looking for dlopen - not found
+-- Looking for socket
+-- Looking for socket - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Performing Test BOOSTER_HAS_GCC_SYNC
+-- Performing Test BOOSTER_HAS_GCC_SYNC - Success
+-- Performing Test BOOSTER_HAVE_GCC_BITS_EXCHANGE_AND_ADD
+-- Performing Test BOOSTER_HAVE_GCC_BITS_EXCHANGE_AND_ADD - Failed
+-- Performing Test BOOSTER_HAVE_GCC_EXT_EXCHANGE_AND_ADD
+-- Performing Test BOOSTER_HAVE_GCC_EXT_EXCHANGE_AND_ADD - Success
+-- Performing Test BOOSTER_HAVE_FREEBSD_ATOMIC
+-- Performing Test BOOSTER_HAVE_FREEBSD_ATOMIC - Failed
+-- Performing Test BOOSTER_HAVE_EXECINFO
+-- Performing Test BOOSTER_HAVE_EXECINFO - Success
+-- Performing Test BOOSTER_HAVE_UNWIND_BACKTRACE
+-- Performing Test BOOSTER_HAVE_UNWIND_BACKTRACE - Success
+-- Performing Test BOOSTER_HAVE_UNWIND_BACKTRACE_BUILTIN
+-- Performing Test BOOSTER_HAVE_UNWIND_BACKTRACE_BUILTIN - Failed
+-- Performing Test BOOSTER_HAVE_SOLARIS_ATOMIC
+-- Performing Test BOOSTER_HAVE_SOLARIS_ATOMIC - Failed
+-- Performing Test BOOSTER_HAVE_MAC_OS_X_ATOMIC
+-- Performing Test BOOSTER_HAVE_MAC_OS_X_ATOMIC - Failed
+-- Performing Test BOOSTER_HAVE_STDINT_H
+-- Performing Test BOOSTER_HAVE_STDINT_H - Success
+-- Performing Test BOOSTER_HAVE_INTTYPES_H
+-- Performing Test BOOSTER_HAVE_INTTYPES_H - Success
+-- Performing Test BOOSTER_AIO_HAVE_PF_INET6
+-- Performing Test BOOSTER_AIO_HAVE_PF_INET6 - Success
+-- Performing Test HAVE_WINDOWS6_API
+-- Performing Test HAVE_WINDOWS6_API - Failed
+-- Performing Test CPPCMS_HAVE_STDINT_H
+-- Performing Test CPPCMS_HAVE_STDINT_H - Success
+-- Performing Test CPPCMS_HAVE_INTTYPES_H
+-- Performing Test CPPCMS_HAVE_INTTYPES_H - Success
+-- Looking for atoll
+-- Looking for atoll - found
+-- Looking for _atoi64
+-- Looking for _atoi64 - not found
+-- Looking for snprintf
+-- Looking for snprintf - found
+-- Looking for stat
+-- Looking for stat - found
+-- Looking for _stat
+-- Looking for _stat - not found
+-- Performing Test CPPCMS_HAVE_STD_WSTRING
+-- Performing Test CPPCMS_HAVE_STD_WSTRING - Success
+-- Performing Test CPPCMS_HAVE_BSD_TM
+-- Performing Test CPPCMS_HAVE_BSD_TM - Success
+-- Performing Test CPPCMS_HAVE_CPP0X_UXSTRING
+-- Performing Test CPPCMS_HAVE_CPP0X_UXSTRING - Success
+-- Performing Test CPPCMS_HAVE_CPP_0X_AUTO
+-- Performing Test CPPCMS_HAVE_CPP_0X_AUTO - Success
+-- Performing Test CPPCMS_HAVE_CPP_0X_DECLTYPE
+-- Performing Test CPPCMS_HAVE_CPP_0X_DECLTYPE - Success
+-- Performing Test CPPCMS_HAVE_GCC_TYPEOF
+-- Performing Test CPPCMS_HAVE_GCC_TYPEOF - Success
+-- Performing Test CPPCMS_HAVE_UNDERSCORE_TYPEOF
+-- Performing Test CPPCMS_HAVE_UNDERSCORE_TYPEOF - Success
+-- Performing Test CPPCMS_HAVE_FSEEKO
+-- Performing Test CPPCMS_HAVE_FSEEKO - Success
+-- Performing Test CPPCMS_HAVE_FSEEKI64
+-- Performing Test CPPCMS_HAVE_FSEEKI64 - Failed
+-- Looking for dlopen
+-- Looking for dlopen - not found
+-- Looking for dlopen in dl
+-- Looking for dlopen in dl - found
+-- Looking for socket
+-- Looking for socket - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for canonicalize_file_name
+-- Looking for canonicalize_file_name - found
+-- Looking for pthread_mutexattr_setpshared
+-- Looking for pthread_mutexattr_setpshared - not found
+-- Looking for pthread_mutexattr_setpshared in /usr/lib/x86_64-linux-gnu/libpthread.so
+-- Looking for pthread_mutexattr_setpshared in /usr/lib/x86_64-linux-gnu/libpthread.so - found
+GNU-TLS Gcrypt or OpenSSL librarys are not found, disabling AES encryption support
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/shark/Downloads/cppcms/build
+root@shark:/home/shark/Downloads/cppcms/build# cmake various_build_options ..
+-- Looking for ICU libraries
+-- ICU Found, building booster locale
+GNU-TLS Gcrypt or OpenSSL librarys are not found, disabling AES encryption support
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/shark/Downloads/cppcms/build
+root@shark:/home/shark/Downloads/cppcms/build# make test
+Running tests...
+Test project /home/shark/Downloads/cppcms/build
+        Start   1: base64_test
+  1/113 Test   #1: base64_test .............................   Passed    0.19 sec
+        Start   2: todec_test
+  2/113 Test   #2: todec_test ..............................   Passed    0.00 sec
+        Start   3: response_test
+  3/113 Test   #3: response_test ...........................   Passed    0.22 sec
+        Start   4: encryptor_test
+  4/113 Test   #4: encryptor_test ..........................   Passed    0.01 sec
+        Start   5: storage_test
+  5/113 Test   #5: storage_test ............................   Passed    0.01 sec
+        Start   6: json_test
+  6/113 Test   #6: json_test ...............................   Passed    0.01 sec
+        Start   7: hash_map_test
+  7/113 Test   #7: hash_map_test ...........................   Passed    0.01 sec
+        Start   8: allocator_test
+  8/113 Test   #8: allocator_test ..........................   Passed   16.59 sec
+        Start   9: multipart_parser_test
+  9/113 Test   #9: multipart_parser_test ...................   Passed    0.04 sec
+        Start  10: content_type_parser_test
+ 10/113 Test  #10: content_type_parser_test ................   Passed    0.00 sec
+        Start  11: cache_backend_test
+ 11/113 Test  #11: cache_backend_test ......................   Passed   12.36 sec
+        Start  12: serialization_test
+ 12/113 Test  #12: serialization_test ......................   Passed    0.01 sec
+        Start  13: xss_test
+ 13/113 Test  #13: xss_test ................................   Passed    0.11 sec
+        Start  14: rewrite_test
+ 14/113 Test  #14: rewrite_test ............................   Passed    0.01 sec
+        Start  15: url_mapper_test
+ 15/113 Test  #15: url_mapper_test .........................   Passed    0.01 sec
+        Start  16: copy_filter_test
+ 16/113 Test  #16: copy_filter_test ........................   Passed    0.01 sec
+        Start  17: mount_point_test
+ 17/113 Test  #17: mount_point_test ........................   Passed    0.01 sec
+        Start  18: file_buffer_test
+ 18/113 Test  #18: file_buffer_test ........................   Passed    7.02 sec
+        Start  19: tc_test_shared
+ 19/113 Test  #19: tc_test_shared ..........................   Passed    0.01 sec
+        Start  20: tc_test_separate
+ 20/113 Test  #20: tc_test_separate ........................   Passed    0.01 sec
+        Start  21: plugin_test
+ 21/113 Test  #21: plugin_test .............................   Passed    0.01 sec
+        Start  22: status_test
+ 22/113 Test  #22: status_test .............................   Passed    0.30 sec
+        Start  23: pool_test
+ 23/113 Test  #23: pool_test ...............................   Passed   10.95 sec
+        Start  24: filter_test
+ 24/113 Test  #24: filter_test .............................   Passed   11.03 sec
+        Start  25: async_status_test
+ 25/113 Test  #25: async_status_test .......................   Passed    1.26 sec
+        Start  26: form_test
+ 26/113 Test  #26: form_test ...............................   Passed    0.19 sec
+        Start  27: cookie_test
+ 27/113 Test  #27: cookie_test .............................   Passed    0.06 sec
+        Start  28: internal_forwarder_test
+ 28/113 Test  #28: internal_forwarder_test .................   Passed    0.05 sec
+        Start  29: forwarder_test
+ 29/113 Test  #29: forwarder_test ..........................   Passed    0.05 sec
+        Start  30: jsonrpc_test
+ 30/113 Test  #30: jsonrpc_test ............................   Passed    0.07 sec
+        Start  31: http_timeouts_test_read
+ 31/113 Test  #31: http_timeouts_test_read .................   Passed   35.15 sec
+        Start  32: http_timeouts_test_write
+ 32/113 Test  #32: http_timeouts_test_write ................   Passed  216.77 sec
+        Start  33: file_server_test
+ 33/113 Test  #33: file_server_test ........................   Passed    0.06 sec
+        Start  34: file_server_test_no_links
+ 34/113 Test  #34: file_server_test_no_links ...............   Passed    0.06 sec
+        Start  35: file_server_with_listing_test
+ 35/113 Test  #35: file_server_with_listing_test ...........   Passed    0.06 sec
+        Start  36: file_server_test_async
+ 36/113 Test  #36: file_server_test_async ..................   Passed    0.05 sec
+        Start  37: file_server_test_no_links_async
+ 37/113 Test  #37: file_server_test_no_links_async .........   Passed    0.05 sec
+        Start  38: file_server_with_listing_test_async
+ 38/113 Test  #38: file_server_with_listing_test_async .....   Passed    0.04 sec
+        Start  39: disco_test_http
+ 39/113 Test  #39: disco_test_http .........................   Passed    0.59 sec
+        Start  40: disco_test_fastcgi_tcp
+ 40/113 Test  #40: disco_test_fastcgi_tcp ..................   Passed    0.59 sec
+        Start  41: disco_test_scgi_tcp
+ 41/113 Test  #41: disco_test_scgi_tcp .....................   Passed    0.60 sec
+        Start  42: secure_post_test
+ 42/113 Test  #42: secure_post_test ........................   Passed    0.07 sec
+        Start  43: disco_test_fastcgi_unix
+ 43/113 Test  #43: disco_test_fastcgi_unix .................   Passed    0.59 sec
+        Start  44: disco_test_scgi_unix
+ 44/113 Test  #44: disco_test_scgi_unix ....................   Passed    0.60 sec
+        Start  45: gzip_test
+ 45/113 Test  #45: gzip_test ...............................   Passed    0.19 sec
+        Start  46: cache_frontend_test
+ 46/113 Test  #46: cache_frontend_test .....................   Passed    6.01 sec
+        Start  47: cppcms_service_test
+ 47/113 Test  #47: cppcms_service_test .....................   Passed    6.32 sec
+        Start  48: external_session_test
+ 48/113 Test  #48: external_session_test ...................   Passed    0.01 sec
+        Start  49: session_interface_test_client_renew
+ 49/113 Test  #49: session_interface_test_client_renew .....   Passed    8.14 sec
+        Start  50: session_interface_test_client_browser
+ 50/113 Test  #50: session_interface_test_client_browser ...   Passed    8.14 sec
+        Start  51: session_interface_test_client_fixed
+ 51/113 Test  #51: session_interface_test_client_fixed .....   Passed    8.13 sec
+        Start  52: session_interface_test_server_renew
+ 52/113 Test  #52: session_interface_test_server_renew .....   Passed    8.14 sec
+        Start  53: session_interface_test_server_browser
+ 53/113 Test  #53: session_interface_test_server_browser ...   Passed    8.14 sec
+        Start  54: session_interface_test_server_fixed
+ 54/113 Test  #54: session_interface_test_server_fixed .....   Passed    8.13 sec
+        Start  55: session_interface_test_both_renew
+ 55/113 Test  #55: session_interface_test_both_renew .......   Passed    8.17 sec
+        Start  56: session_interface_test_both_browser
+ 56/113 Test  #56: session_interface_test_both_browser .....   Passed    8.17 sec
+        Start  57: session_interface_test_both_fixed
+ 57/113 Test  #57: session_interface_test_both_fixed .......   Passed    8.16 sec
+        Start  58: proto_test_async_http
+ 58/113 Test  #58: proto_test_async_http ...................   Passed    3.16 sec
+        Start  59: proto_test_async_scgi
+ 59/113 Test  #59: proto_test_async_scgi ...................   Passed    2.86 sec
+        Start  60: proto_test_async_fastcgi
+ 60/113 Test  #60: proto_test_async_fastcgi ................   Passed    9.44 sec
+        Start  61: proto_test_async_scgi_unix
+ 61/113 Test  #61: proto_test_async_scgi_unix ..............   Passed    2.80 sec
+        Start  62: proto_test_async_fastcgi_unix
+ 62/113 Test  #62: proto_test_async_fastcgi_unix ...........   Passed    9.24 sec
+        Start  63: proto_test_sync_http
+ 63/113 Test  #63: proto_test_sync_http ....................   Passed    3.15 sec
+        Start  64: proto_test_sync_scgi
+ 64/113 Test  #64: proto_test_sync_scgi ....................   Passed    2.90 sec
+        Start  65: proto_test_sync_fastcgi
+ 65/113 Test  #65: proto_test_sync_fastcgi .................   Passed   10.00 sec
+        Start  66: proto_test_sync_scgi_unix
+ 66/113 Test  #66: proto_test_sync_scgi_unix ...............   Passed    2.83 sec
+        Start  67: proto_test_sync_fastcgi_unix
+ 67/113 Test  #67: proto_test_sync_fastcgi_unix ............   Passed    9.81 sec
+        Start  68: proto_test_nonblocking_http
+ 68/113 Test  #68: proto_test_nonblocking_http .............   Passed    3.10 sec
+        Start  69: proto_test_nonblocking_scgi
+ 69/113 Test  #69: proto_test_nonblocking_scgi .............   Passed    2.89 sec
+        Start  70: proto_test_nonblocking_fastcgi
+ 70/113 Test  #70: proto_test_nonblocking_fastcgi ..........   Passed   10.02 sec
+        Start  71: proto_test_nonblocking_scgi_unix
+ 71/113 Test  #71: proto_test_nonblocking_scgi_unix ........   Passed    2.83 sec
+        Start  72: proto_test_nonblocking_fastcgi_unix
+ 72/113 Test  #72: proto_test_nonblocking_fastcgi_unix .....   Passed    9.79 sec
+        Start  73: loadable_storage_pass
+ 73/113 Test  #73: loadable_storage_pass ...................   Passed    1.01 sec
+        Start  74: loadable_storage_fail
+ 74/113 Test  #74: loadable_storage_fail ...................   Passed    0.01 sec
+        Start  75: test_function_function
+ 75/113 Test  #75: test_function_function ..................   Passed    0.00 sec
+        Start  76: test_function_callback
+ 76/113 Test  #76: test_function_callback ..................   Passed    0.00 sec
+        Start  77: test_ptime_posix_time
+ 77/113 Test  #77: test_ptime_posix_time ...................   Passed    0.25 sec
+        Start  78: test_thread_thread
+ 78/113 Test  #78: test_thread_thread ......................   Passed    3.82 sec
+        Start  79: test_thread_fork
+ 79/113 Test  #79: test_thread_fork ........................   Passed    1.01 sec
+        Start  80: test_smart_ptr_shared_ptr
+ 80/113 Test  #80: test_smart_ptr_shared_ptr ...............   Passed    0.01 sec
+        Start  81: test_smart_ptr_atomic_counter
+ 81/113 Test  #81: test_smart_ptr_atomic_counter ...........   Passed    0.07 sec
+        Start  82: test_smart_ptr_sp_counter
+ 82/113 Test  #82: test_smart_ptr_sp_counter ...............   Passed    0.00 sec
+        Start  83: test_log_log
+ 83/113 Test  #83: test_log_log ............................   Passed    0.00 sec
+        Start  84: test_nowide_nowide
+ 84/113 Test  #84: test_nowide_nowide ......................   Passed    0.00 sec
+        Start  85: test_iostreams_streambuf
+ 85/113 Test  #85: test_iostreams_streambuf ................   Passed    0.00 sec
+        Start  86: test_regex_regex
+ 86/113 Test  #86: test_regex_regex ........................   Passed    0.00 sec
+        Start  87: test_aio_reactor
+ 87/113 Test  #87: test_aio_reactor ........................   Passed    0.61 sec
+        Start  88: test_aio_timer
+ 88/113 Test  #88: test_aio_timer ..........................   Passed    0.21 sec
+        Start  89: test_aio_event_loop
+ 89/113 Test  #89: test_aio_event_loop .....................   Passed    0.41 sec
+        Start  90: test_aio_socket
+ 90/113 Test  #90: test_aio_socket .........................   Passed    0.93 sec
+        Start  91: test_aio_endpoint
+ 91/113 Test  #91: test_aio_endpoint .......................   Passed    0.01 sec
+        Start  92: test_backtrace_backtrace
+ 92/113 Test  #92: test_backtrace_backtrace ................   Passed    0.01 sec
+        Start  93: test_aio_prefork
+ 93/113 Test  #93: test_aio_prefork ........................   Passed    0.51 sec
+        Start  94: test_locale_codepage
+ 94/113 Test  #94: test_locale_codepage ....................   Passed    0.19 sec
+        Start  95: test_locale_message
+ 95/113 Test  #95: test_locale_message .....................   Passed    0.02 sec
+        Start  96: test_locale_ios_prop
+ 96/113 Test  #96: test_locale_ios_prop ....................   Passed    0.00 sec
+        Start  97: test_locale_codepage_converter
+ 97/113 Test  #97: test_locale_codepage_converter ..........   Passed    0.01 sec
+        Start  98: test_locale_date_time
+ 98/113 Test  #98: test_locale_date_time ...................   Passed    0.06 sec
+        Start  99: test_locale_generator
+ 99/113 Test  #99: test_locale_generator ...................   Passed    0.02 sec
+        Start 100: test_locale_config
+100/113 Test #100: test_locale_config ......................   Passed    0.03 sec
+        Start 101: test_locale_utf
+101/113 Test #101: test_locale_utf .........................   Passed    0.01 sec
+        Start 102: test_locale_codecvt
+102/113 Test #102: test_locale_codecvt .....................   Passed    0.01 sec
+        Start 103: test_locale_collate
+103/113 Test #103: test_locale_collate .....................   Passed    0.04 sec
+        Start 104: test_locale_convert
+104/113 Test #104: test_locale_convert .....................   Passed    0.05 sec
+        Start 105: test_locale_boundary
+105/113 Test #105: test_locale_boundary ....................***Failed    0.15 sec
+        Start 106: test_locale_formatting
+106/113 Test #106: test_locale_formatting ..................***Failed    0.17 sec
+        Start 107: test_locale_icu_vs_os_timezone
+107/113 Test #107: test_locale_icu_vs_os_timezone ..........   Passed    0.01 sec
+        Start 108: test_locale_std_convert
+108/113 Test #108: test_locale_std_convert .................   Passed    0.01 sec
+        Start 109: test_locale_std_formatting
+109/113 Test #109: test_locale_std_formatting ..............   Passed    0.01 sec
+        Start 110: test_locale_std_collate
+110/113 Test #110: test_locale_std_collate .................   Passed    0.02 sec
+        Start 111: test_locale_posix_collate
+111/113 Test #111: test_locale_posix_collate ...............   Passed    0.01 sec
+        Start 112: test_locale_posix_convert
+112/113 Test #112: test_locale_posix_convert ...............   Passed    0.01 sec
+        Start 113: test_locale_posix_formatting
+113/113 Test #113: test_locale_posix_formatting ............   Passed    0.00 sec
+
+98% tests passed, 2 tests failed out of 113
+
+Total Test time (real) = 496.39 sec
+
+The following tests FAILED:
+        105 - test_locale_boundary (Failed)
+        106 - test_locale_formatting (Failed)
+Errors while running CTest
+make: *** [Makefile:107: test] Error 8
+root@shark:/home/shark/Downloads/cppcms/build# make install  
+'[ 13%] Built target booster
+[ 27%] Built target cppcms
+[ 27%] Built target tc_test
+[ 27%] Built target cache_frontend_test
+[ 27%] Built target cppcms_service_test
+[ 28%] Built target response_test
+[ 28%] Built target secure_post_test
+[ 28%] Built target session_interface_test
+[ 28%] Built target gzip_test
+[ 29%] Built target hash_map_test
+[ 29%] Built target cppcms_make_key
+[ 30%] Built target tc_sep_skin_b
+[ 31%] Built target hello_world
+[ 32%] Built target skin3
+[ 32%] Built target external_session_test
+[ 32%] Built target tc_sep_skin
+[ 33%] Built target tc_plugin2
+[ 33%] Built target allocator_test
+[ 47%] Built target cppcms-static
+[ 47%] Built target rewrite_test
+[ 47%] Built target plugin_test
+[ 48%] Built target tc_plugin
+[ 48%] Built target file_server_test
+[ 48%] Built target loadable_storage_test
+[ 49%] Built target plugin
+[ 50%] Built target tc_sep_skin_a
+[ 51%] Built target mount_point_test
+[ 52%] Built target cppcms_config_find_param
+[ 53%] Built target copy_filter_test
+[ 53%] Built target tc_skin
+[ 54%] Built target cache_backend_test
+[ 55%] Built target tc_skin_a
+[ 56%] Built target cppcms_scale
+[ 57%] Built target tc_skin_b
+[ 57%] Built target form_test
+[ 57%] Built target proto_test
+[ 58%] Built target loadable_storage
+[ 59%] Built target pool_test
+[ 60%] Built target disco_test
+[ 60%] Built target http_timeouts_test
+[ 61%] Built target storage_test
+[ 62%] Built target content_type_parser_test
+[ 63%] Built target todec_test
+[ 63%] Built target encryptor_test
+[ 64%] Built target json_test
+[ 65%] Built target forwarder_test
+[ 66%] Built target file_buffer_test
+[ 66%] Built target jsonrpc_test
+[ 66%] Built target cookie_test
+[ 66%] Built target multipart_parser_test
+[ 67%] Built target serialization_test
+[ 67%] Built target base64_test
+[ 67%] Built target status_test
+[ 68%] Built target filter_test
+[ 68%] Built target url_mapper_test
+[ 69%] Built target xss_test
+[ 70%] Built target test_locale_posix_convert
+[ 70%] Built target test_locale_posix_collate
+[ 71%] Built target test_locale_std_formatting
+[ 71%] Built target test_locale_std_convert
+[ 72%] Built target test_smart_ptr_shared_ptr
+[ 72%] Built target test_function_function
+[ 72%] Built target test_aio_reactor
+[ 73%] Built target test_thread_fork
+[ 74%] Built target test_locale_message
+[ 87%] Built target booster-static
+[ 88%] Built target test_nowide_nowide
+[ 88%] Built target test_smart_ptr_sp_counter
+[ 88%] Built target test_log_log
+[ 89%] Built target test_aio_prefork
+[ 89%] Built target test_ptime_posix_time
+[ 89%] Built target test_function_callback
+[ 90%] Built target test_aio_socket
+[ 91%] Built target test_regex_regex
+[ 91%] Built target test_aio_timer
+[ 91%] Built target test_smart_ptr_atomic_counter
+[ 91%] Built target test_locale_posix_formatting
+[ 91%] Built target test_thread_thread
+[ 92%] Built target test_locale_codecvt
+[ 93%] Built target test_locale_std_collate
+[ 93%] Built target test_locale_collate
+[ 93%] Built target test_aio_event_loop
+[ 94%] Built target test_backtrace_backtrace
+[ 95%] Built target test_aio_endpoint
+[ 95%] Built target test_locale_ios_prop
+[ 96%] Built target test_iostreams_streambuf
+[ 97%] Built target test_locale_codepage_converter
+[ 97%] Built target test_locale_generator
+[ 98%] Built target test_locale_config
+[ 99%] Built target test_locale_date_time
+[ 99%] Built target test_locale_utf
+[ 99%] Built target test_locale_codepage
+[ 99%] Built target test_locale_convert
+[ 99%] Built target test_locale_formatting
+[ 99%] Built target test_locale_boundary
+[100%] Built target test_locale_icu_vs_os_timezone
+Install the project...
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /usr/local/lib/libcppcms.so.1.2.1
+-- Installing: /usr/local/lib/libcppcms.so.1
+-- Set runtime path of "/usr/local/lib/libcppcms.so.1.2.1" to ""
+-- Installing: /usr/local/lib/libcppcms.so
+-- Installing: /usr/local/include/cppcms/config.h
+-- Installing: /usr/local/lib/libcppcms.a
+-- Up-to-date: /usr/local/include/cppcms/config.h
+-- Installing: /usr/local/bin/cppcms_config_find_param
+-- Set runtime path of "/usr/local/bin/cppcms_config_find_param" to ""
+-- Installing: /usr/local/bin/cppcms_make_key
+-- Set runtime path of "/usr/local/bin/cppcms_make_key" to ""
+-- Installing: /usr/local/bin/cppcms_scale
+-- Set runtime path of "/usr/local/bin/cppcms_scale" to ""
+-- Installing: /usr/local/bin/cppcms_tmpl_cc
+-- Installing: /usr/local/bin/cppcms_run
+-- Up-to-date: /usr/local/include/cppcms
+-- Installing: /usr/local/include/cppcms/base_view.h
+-- Installing: /usr/local/include/cppcms/xss.h
+-- Installing: /usr/local/include/cppcms/session_sid.h
+-- Installing: /usr/local/include/cppcms/thread_pool.h
+-- Installing: /usr/local/include/cppcms/mount_point.h
+-- Installing: /usr/local/include/cppcms/localization.h
+-- Installing: /usr/local/include/cppcms/url_mapper.h
+-- Installing: /usr/local/include/cppcms/base_cache_fwd.h
+-- Installing: /usr/local/include/cppcms/service.h
+-- Installing: /usr/local/include/cppcms/capi
+-- Installing: /usr/local/include/cppcms/capi/session.h
+-- Installing: /usr/local/include/cppcms/cppcms_error.h
+-- Installing: /usr/local/include/cppcms/archive_traits.h
+-- Installing: /usr/local/include/cppcms/base64.h
+-- Installing: /usr/local/include/cppcms/session_pool.h
+-- Installing: /usr/local/include/cppcms/session_dual.h
+-- Installing: /usr/local/include/cppcms/mem_bind.h
+-- Installing: /usr/local/include/cppcms/http_response.h
+-- Installing: /usr/local/include/cppcms/base_content.h
+-- Installing: /usr/local/include/cppcms/forwarder.h
+-- Installing: /usr/local/include/cppcms/urandom.h
+-- Installing: /usr/local/include/cppcms/util.h
+-- Installing: /usr/local/include/cppcms/session_interface.h
+-- Installing: /usr/local/include/cppcms/serialization_classes.h
+-- Installing: /usr/local/include/cppcms/http_cookie.h
+-- Installing: /usr/local/include/cppcms/crypto.h
+-- Installing: /usr/local/include/cppcms/cache_pool.h
+-- Installing: /usr/local/include/cppcms/plugin.h
+-- Installing: /usr/local/include/cppcms/json.h
+-- Installing: /usr/local/include/cppcms/application.h
+-- Installing: /usr/local/include/cppcms/session_storage.h
+-- Installing: /usr/local/include/cppcms/steal_buf.h
+-- Installing: /usr/local/include/cppcms/cstdint.h
+-- Installing: /usr/local/include/cppcms/rpc_json.h
+-- Installing: /usr/local/include/cppcms/session_api.h
+-- Installing: /usr/local/include/cppcms/copy_filter.h
+-- Installing: /usr/local/include/cppcms/serialization.h
+-- Installing: /usr/local/include/cppcms/applications_pool.h
+-- Installing: /usr/local/include/cppcms/defs.h
+-- Installing: /usr/local/include/cppcms/cache_interface.h
+-- Installing: /usr/local/include/cppcms/http_content_filter.h
+-- Installing: /usr/local/include/cppcms/http_request.h
+-- Installing: /usr/local/include/cppcms/session_cookies.h
+-- Installing: /usr/local/include/cppcms/http_context.h
+-- Installing: /usr/local/include/cppcms/form.h
+-- Installing: /usr/local/include/cppcms/views_pool.h
+-- Installing: /usr/local/include/cppcms/view.h
+-- Installing: /usr/local/include/cppcms/url_dispatcher.h
+-- Installing: /usr/local/include/cppcms/http_content_type.h
+-- Installing: /usr/local/include/cppcms/locale_fwd.h
+-- Installing: /usr/local/include/cppcms/encoding.h
+-- Installing: /usr/local/include/cppcms/string_key.h
+-- Installing: /usr/local/include/cppcms/filters.h
+-- Installing: /usr/local/include/cppcms/http_file.h
+-- Installing: /usr/local/include/booster
+-- Installing: /usr/local/include/booster/log.h
+-- Installing: /usr/local/include/booster/function.h
+-- Installing: /usr/local/include/booster/regex.h
+-- Installing: /usr/local/include/booster/checked_delete.h
+-- Installing: /usr/local/include/booster/copy_ptr.h
+-- Installing: /usr/local/include/booster/backtrace.h
+-- Installing: /usr/local/include/booster/posix_time.h
+-- Installing: /usr/local/include/booster/nowide
+-- Installing: /usr/local/include/booster/nowide/convert.h
+-- Installing: /usr/local/include/booster/nowide/fstream.h
+-- Installing: /usr/local/include/booster/nowide/cstdio.h
+-- Installing: /usr/local/include/booster/perl_regex.h
+-- Installing: /usr/local/include/booster/locale
+-- Installing: /usr/local/include/booster/locale/generic_codecvt.h
+-- Installing: /usr/local/include/booster/locale/date_time_facet.h
+-- Installing: /usr/local/include/booster/locale/info.h
+-- Installing: /usr/local/include/booster/locale/utf8_codecvt.h
+-- Installing: /usr/local/include/booster/locale/boundary.h
+-- Installing: /usr/local/include/booster/locale/format.h
+-- Installing: /usr/local/include/booster/locale/collator.h
+-- Installing: /usr/local/include/booster/locale/utf.h
+-- Installing: /usr/local/include/booster/locale/encoding_errors.h
+-- Installing: /usr/local/include/booster/locale/message.h
+-- Installing: /usr/local/include/booster/locale/generator.h
+-- Installing: /usr/local/include/booster/locale/util.h
+-- Installing: /usr/local/include/booster/locale/gnu_gettext.h
+-- Installing: /usr/local/include/booster/locale/formatting.h
+-- Installing: /usr/local/include/booster/locale/date_time.h
+-- Installing: /usr/local/include/booster/locale/hold_ptr.h
+-- Installing: /usr/local/include/booster/locale/time_zone.h
+-- Installing: /usr/local/include/booster/locale/conversion.h
+-- Installing: /usr/local/include/booster/locale/encoding_utf.h
+-- Installing: /usr/local/include/booster/locale/localization_backend.h
+-- Installing: /usr/local/include/booster/locale/boundary
+-- Installing: /usr/local/include/booster/locale/boundary/types.h
+-- Installing: /usr/local/include/booster/locale/boundary/index.h
+-- Installing: /usr/local/include/booster/locale/boundary/facets.h
+-- Installing: /usr/local/include/booster/locale/boundary/boundary_point.h
+-- Installing: /usr/local/include/booster/locale/boundary/segment.h
+-- Installing: /usr/local/include/booster/locale/config.h
+-- Installing: /usr/local/include/booster/locale/encoding.h
+-- Installing: /usr/local/include/booster/streambuf.h
+-- Installing: /usr/local/include/booster/noncopyable.h
+-- Installing: /usr/local/include/booster/iterator
+-- Installing: /usr/local/include/booster/iterator/iterator_facade.h
+-- Installing: /usr/local/include/booster/thread.h
+-- Installing: /usr/local/include/booster/bad_weak_ptr.h
+-- Installing: /usr/local/include/booster/locale.h
+-- Installing: /usr/local/include/booster/refcounted.h
+-- Installing: /usr/local/include/booster/cstdint.h
+-- Installing: /usr/local/include/booster/shared_ptr.h
+-- Installing: /usr/local/include/booster/atomic_counter.h
+-- Installing: /usr/local/include/booster/system_error.h
+-- Installing: /usr/local/include/booster/regex_match.h
+-- Installing: /usr/local/include/booster/clone_ptr.h
+-- Installing: /usr/local/include/booster/hold_ptr.h
+-- Installing: /usr/local/include/booster/assert.h
+-- Installing: /usr/local/include/booster/shared_object.h
+-- Installing: /usr/local/include/booster/weak_ptr.h
+-- Installing: /usr/local/include/booster/config.h
+-- Installing: /usr/local/include/booster/auto_ptr_inc.h
+-- Installing: /usr/local/include/booster/aio
+-- Installing: /usr/local/include/booster/aio/types.h
+-- Installing: /usr/local/include/booster/aio/buffer.h
+-- Installing: /usr/local/include/booster/aio/socket.h
+-- Installing: /usr/local/include/booster/aio/reactor.h
+-- Installing: /usr/local/include/booster/aio/basic_socket.h
+-- Installing: /usr/local/include/booster/aio/aio_category.h
+-- Installing: /usr/local/include/booster/aio/basic_io_device.h
+-- Installing: /usr/local/include/booster/aio/aio_config.h
+-- Installing: /usr/local/include/booster/aio/endpoint.h
+-- Installing: /usr/local/include/booster/aio/deadline_timer.h
+-- Installing: /usr/local/include/booster/aio/stream_socket.h
+-- Installing: /usr/local/include/booster/aio/acceptor.h
+-- Installing: /usr/local/include/booster/aio/io_service.h
+-- Installing: /usr/local/include/booster/intrusive_ptr.h
+-- Installing: /usr/local/include/booster/callback.h
+-- Installing: /usr/local/include/booster/ctime.h
+-- Installing: /usr/local/include/booster/traits
+-- Installing: /usr/local/include/booster/traits/enable_if.h
+-- Installing: /usr/local/include/booster/traits/type_traits.h
+-- Installing: /usr/local/include/booster/traits/is_base_of.h
+-- Installing: /usr/local/include/booster/enable_shared_from_this.h
+-- Installing: /usr/local/include/booster/smart_ptr
+-- Installing: /usr/local/include/booster/smart_ptr/sp_typeinfo.h
+-- Installing: /usr/local/include/booster/smart_ptr/sp_counted_impl.h
+-- Installing: /usr/local/include/booster/smart_ptr/shared_count.h
+-- Installing: /usr/local/include/booster/smart_ptr/sp_convertible.h
+-- Installing: /usr/local/include/booster/smart_ptr/operator_bool.h
+-- Installing: /usr/local/include/booster/smart_ptr/sp_counted_base.h
+-- Installing: /usr/local/lib/libbooster.so.0.2.0
+-- Installing: /usr/local/lib/libbooster.so.0
+-- Installing: /usr/local/lib/libbooster.so
+-- Installing: /usr/local/include/booster/build_config.h
+-- Installing: /usr/local/lib/libbooster.a
+-- Up-to-date: /usr/local/include/booster/build_config.h
+root@shark:/home/shark/Downloads/cppcms/build# 
+
